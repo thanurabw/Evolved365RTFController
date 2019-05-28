@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Evolved365Controllers" constructor="JoditRichTextController" version="0.0.1" display-name-key="JoditRichTextController" description-key="JoditRichTextController_Evolved365" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS 
+    -->
+    <type-group name="textarea">
+      <type>Multiple</type>
+      <type>SingleLine.TextArea</type>
+    </type-group>
+    <property name="JoditRichTextProperty" display-name-key="JoditRichText_Display_Key" description-key="JoditRichText_Desc_Key" of-type-group="textarea" usage="bound" required="true" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/jodit.min.css" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/JoditRichTextController.css" order="1" />
+      <resx path="strings/JoditRichTextController.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+  </control>
+</manifest>
