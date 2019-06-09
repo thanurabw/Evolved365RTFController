@@ -44,7 +44,8 @@ export class JoditRichTextController implements ComponentFramework.StandardContr
 	{
 		// Control initialization code
         this._context = context;
-        this._container = document.createElement("div");
+		this._container = document.createElement("div");
+		this._container.setAttribute("class", "joditPCFContainer");
         this._notifyOutputChanged = notifyOutputChanged;
 		this._refreshJoditData = this.refreshJoditData.bind(this);
 		
@@ -66,7 +67,9 @@ export class JoditRichTextController implements ComponentFramework.StandardContr
         container.appendChild(this._container);
 
         //initiate Jodit Editor to the textarea
-        this._richTextEditor = new Jodit('#'+ this._className);
+        this._richTextEditor = new Jodit('#'+ this._className, {
+			minHeight: '350'
+		 });
         //add event listener for on change event
         this._richTextEditor.events.on('change',this._refreshJoditData);
         //Setting the editor default value

@@ -11,7 +11,8 @@
 
     <resources>
       <code path="index.ts" order="1"/>
-      <css path="css/jodit.min.css" order="1"/>
+      <css path="css/pcfcontainer.css" order="1"/>
+      <css path="css/jodit.min.css" order="2"/>
       <!-- UNCOMMENT TO ADD MORE RESOURCES
       <css path="css/JoditRichTextController.css" order="1" />
       <resx path="strings/JoditRichTextController.1033.resx" version="1.0.0" />
