@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+  <control namespace="Evolved365Controllers" constructor="JoditRichTextController" version="0.0.1" display-name-key="JoditRichTextController" description-key="JoditRichTextController_Evolved365" control-type="standard">
+    <type-group name="textarea">
+      <type>Multiple</type>
+      <type>SingleLine.TextArea</type>
+    </type-group>
+    <property name="JoditRichTextProperty" display-name-key="JoditRichText_Display_Key" description-key="JoditRichText_Desc_Key" of-type-group="textarea" usage="bound" required="true"/>
+    <resources>
+      <code path="bundle.js" order="1"/>
+      <css path="pcfcontainer.css" order="1"/>
+      <css path="jodit.min.css" order="2"/>
+    </resources>
+  </control>
+</manifest>
